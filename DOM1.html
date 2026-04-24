@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+    <h1>Hello Everyone. Welcome to this page</h1>
+    <p>Here are some list of games</p>
+    <ul>
+        <li>Elden rings</li>
+        <li class="ucched">Sekiro</li>
+        <li class="ucched">Crimson Desert</li>
+        <li class="ucched">Need for speed</li>
+        <li>Prince of persia</li>
+    </ul>
+    </section>
+
+    <section>
+        <header>Foods</header>
+        <h1>Here are my fav foods</h1>
+
+        <ul>
+            <li>Burger</li>
+            <li id="pizza">Pizza</li>
+            <li id="nachoz">Nachoz</li>
+            <li>Kabab</li>
+        </ul>
+    </section>
+
+    <script>
+        const gameName = document.getElementsByTagName('li');
+        console.log(gameName);
+
+        for(const el of gameName)
+    {
+        console.log(el.innerText);
+    }
+
+    const favFood = document.getElementById('pizza');
+    console.log(favFood.innerText);
+
+    const eleminate = document.getElementsByClassName('ucched');
+    for(const ele of eleminate)
+    {
+        ele.innerText = 'Deleted';
+    }
+    </script>
+</body>
+</html>
