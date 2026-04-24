@@ -23,7 +23,7 @@ const animal={
     benefit : 'milk'
 }
 
-var upa;
+var upa = " ";
 for(el in animal)
 {
     upa = upa + el + " ";
