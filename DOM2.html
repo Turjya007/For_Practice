@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Section>
+        <div class="newEra">
+            <h1>No tag</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia iste laboriosam odit illo amet maxime quae exercitationem a fuga, quasi cupiditate autem ipsa nobis unde, praesentium, iure consectetur nisi minima nemo corrupti! Accusantium blanditiis eos velit, adipisci quos nam at sequi nostrum <span>Why this Kolaberi D</span> optio dolore vero nihil dolorum obcaecati fugiat ipsa vel inventore consectetur. Eius at aliquam laboriosam fuga placeat vel reprehenderit ex expedita molestiae molestias. Repudiandae distinctio dolorem nostrum quo saepe quas autem aliquam soluta! Fugiat expedita ad quasi delectus, voluptatum minima! Cum, reiciendis? Facere ex</p>
+
+            <p id="deadpool">Lorem ipsum dolor sit amet <span>Hello World</span> consectetur adipisicing elit. Maiores voluptates ipsa tempore ratione aliquam <span>Fuck you world</span> exercitationem nulla itaque nobis quia sapiente?
+            </p>
+        </div>
+
+        <div class="oldEra">
+            <h2 id="gameList">My game list</h2>
+            <ul>
+                <li class="games">Need for speed</li>
+                <li class="games">Forza Horizon</li>
+                <li class="games">Spider man</li>
+                <li class="games">Black myth wookong</li>
+            </ul>
+        </div>
+    </Section>
+
+    <script>
+       const collection = document.querySelectorAll('.newEra #deadpool span');
+
+       for(const el of collection)
+    {
+        console.log(el.innerText);
+    }
+
+    const gamelist1 = document.getElementById('gameList');
+    gamelist1.style.backgroundColor='lightgreen';
+    gamelist1.style.paddingLeft='20px'
+    gamelist1.style.paddingTop='10px';
+    gamelist1.style.paddingBottom='10px';
+    gamelist1.style.borderRadius='4px';
+    gamelist1.style.border='1px solid black';
+    gamelist1.style.textAlign='center';
+
+    const divver = document.querySelectorAll('div');
+    for(const element of divver)
+    {
+        console.log(element);
+        element.style.backgroundColor='lightblue';
+        element.style.borderRadius='4px';
+        element.style.border='1px solid gray';
+        element.style.padding='8px';
+        element.style.marginBottom='5px';
+    }
+    </script>
+</body>
+</html>
