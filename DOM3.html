@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .sectionCard{
+            background-color: rgb(172, 240, 104);
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid gray;
+            border-radius: 4px;
+        }
+        button{
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        button:focus{
+            background-color: rgb(236, 170, 122);
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1>Hello Everyone</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus a ad error distinctio minus nam ratione nisi cum amet, mollitia libero porro nobis, repudiandae hic dignissimos id! Culpa illum dolorem earum, laboriosam totam, mollitia veniam deleniti, tempora minus nulla aliquid et commodi debitis! Laboriosam obcaecati, ab voluptas enim harum cupiditate. Similique mollitia, laudantium blanditiis dicta tempore quae ad ut ipsum, praesentium porro soluta hic, quibusdam odit? Quam, doloribus sequi adipisci pariatur porro quaerat sapiente qui ducimus minima eius at ea totam, dolores accusamus. Facere odit, accusamus error veritatis, iusto voluptas asperiores, repudiandae tempore aliquid deserunt culpa perferendis. Vel, dicta velit!</p>
+        <button>Click Here</button>
+    </section>
+
+    <section>
+        <h1>2nd Para</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit animi, suscipit est voluptate, minus nam voluptatibus rerum tenetur architecto libero at perferendis voluptatum unde dignissimos. Laboriosam deserunt minus iusto ad dignissimos iure tempore, atque amet voluptatem sit corrupti tempora accusamus ab aliquam est enim suscipit recusandae aliquid vitae totam aperiam asperiores quibusdam fugit. Nihil consectetur, quasi necessitatibus totam quaerat maxime.</p>
+        <Button>click Here</Button>
+    </section>
+
+    <script>
+        const allSec = document.querySelectorAll('section');
+
+        for(const el of allSec)
+    {
+        el.classList.add('sectionCard')
+    }
+    </script>
+</body>
+</html>
