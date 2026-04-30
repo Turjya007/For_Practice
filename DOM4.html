@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="foodSection">
+        <h1>These are my favourite foods</h1>
+        <ul id="foods">
+            <li>Kacchi</li>
+            <li>Biriyani</li>
+            <li>Nehari</li>
+            <li>Kabab</li>
+            <li>Pizza</li>
+        </ul>
+    </section>
+
+    <script>
+
+        const b3 = document.createElement('h1');
+        b3.innerText ='I love these foods';
+
+        const c3 = document.getElementById('foodSection');
+        c3.appendChild(b3);
+
+        const b1 = document.createElement('li');
+        b1.innerText='burger';
+
+        const c1 = document.getElementById('foods');
+        c1.appendChild(b1);
+
+
+    </script>
+</body>
+</html>
