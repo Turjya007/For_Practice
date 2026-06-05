@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            display: flex;
+            border: 1px solid gray;
+            justify-content: space-between;
+        }
+
+        .aBox{
+            width: 300px;
+            height: 150px;
+            border: 1px solid gray;
+            border-radius: 4px;
+            background-color: rgb(101, 236, 101);
+            margin: 10px;
+        }
+
+        .Btn1{
+            width: 100px;
+            height: 50px;
+            margin-left: 10px;
+            background-color: tomato;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .Btn1:hover{
+            border: 1px solid black;
+        }
+
+        h1{
+            margin-left: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: coral;
+        }
+
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+    <div class="aBox" id="abox1">
+        <h1>Hello its me Turjya</h1>
+        <button class="Btn1" id="btn1">Click me</button>
+    </div>
+
+    <div class="aBox" id="abox2">
+        <h1>Hello its me Turjya</h1>
+        <button class="Btn1" id="btn2">Click me</button>
+    </div>
+
+    <div class="aBox" id="abox3">
+        <h1>Hello its me Turjya</h1>
+        <button class="Btn1" id="btn3" onclick="makeGreen()">Click me</button>
+    </div>
+
+    <div class="aBox" id="abox4">
+        <h1>Hello its me Turjya</h1>
+        <button class="Btn1" id="btn4">Click me</button>
+    </div>
+
+    </div>
+
+    <script>
+        const btn1 = document.getElementById('btn1');
+        const abox1 = document.getElementById('abox1');
+
+        function makered(){
+            abox1.style.backgroundColor='lightblue';
+        }
+
+        btn1.onclick = makered;
+
+        //.............................................
+
+        const btn2 = document.getElementById('btn2');
+        const abox2 = document.getElementById('abox2');
+
+        function makepurple(){
+            abox2.style.backgroundColor='purple';
+        }
+
+        btn2.onclick= makepurple;
+
+        //...............................................
+
+        const btn3 = document.getElementById('btn3');
+        const abox3 = document.getElementById('abox3');
+        function makeGreen(){
+            const font=document.querySelector('#abox3 h1');
+            font.style.color='yellow';
+            abox3.style.backgroundColor='lightgreen';
+        }
+
+        //................................................
+
+        document.getElementById('btn4').addEventListener('click', function(){
+            document.getElementById('abox4').style.backgroundColor='goldenrod';
+            document.querySelector('#abox4 h1').style.color='white';
+        })
+    </script>
+</body>
+</html>
