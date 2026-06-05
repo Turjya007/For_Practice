@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <main id="container">
+
+    </main>
+    <script>
+        const main = document.getElementById('container');
+
+        const section1 = document.createElement('section');
+        main.appendChild(section1);
+
+        const h11= document.createElement('h1');
+        h11.innerText='My fav supercars';
+
+        section1.appendChild(h11);
+
+        const ul1= document.createElement('ul');
+        section1.appendChild(ul1);
+
+        const li1= document.createElement('li');
+        li1.innerText='Lamborgini';
+
+        ul1.appendChild(li1);
+
+        const li2= document.createElement('li');
+        li2.innerText='McLaren';
+
+        ul1.appendChild(li2);
+
+        const section2 = document.createElement('section');
+        section2.innerHTML = `<h1>Hello Everyone</h1>
+        <ul>
+            <li>I am</li>
+            <li>Turjya</li>
+            </ul>`
+
+            main.appendChild(section2);
+
+
+    </script>
+</body>
+</html>
