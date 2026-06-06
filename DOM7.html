@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello everyone</h1>
+    <span>The user is :</span> <span id="name">Empty</span>
+    <br>
+    <br>
+    <input type="text" placeholder="Enter your name" id="nameTaker">
+    <br>
+    <button id="btnUpdate" style="margin-top: 10px ;">Update name</button>
+
+    <script>
+        const name=document.getElementById('name');
+        const nameTaker = document.getElementById('nameTaker');
+        const btn = document.getElementById('btnUpdate');
+
+        btn.addEventListener('click', function changer(){
+            const value= nameTaker.value;
+            name.innerText = value;
+        })
+    </script>
+</body>
+</html>
