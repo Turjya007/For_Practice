@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            border: 1px solid gray;
+            border-radius: 4px;
+            padding: 15px;
+        }
+
+        p{
+            background-color: rgb(169, 198, 236);
+            box-shadow: 3px 3px 5px rgba(128, 128, 128, 0.253);
+            padding: 5px;
+            border-radius: 4px;
+        }
+
+        button{
+            height: 40px;
+            width: 110px;
+            border: none;
+            background-color: rgb(129, 206, 93);
+            border-radius: 4px;
+            box-shadow: 0px 3px 8px rgba(128, 128, 128, 0.486);
+            margin-top: 8px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Your Comment Section</h2>
+        <div id="allComment">
+            <p id="comment1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae provident minus cum, corrupti harum temporibus numquam, molestias, cumque aliquam asperiores repudiandae enim architecto eos iusto voluptatibus accusamus corporis. Consectetur, in?
+            </p>
+
+            <p id="comment2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos amet ratione modi nam totam saepe corrupti consequatur, nisi illum, doloribus architecto inventore dolore ipsam nonne.
+            </p>
+
+            <p id='comment3'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam totam eaque tenetur aliquam libero sunt, ratione deleniti, esse labore fuga aperiam ullam quam non? Consequuntur unde cumque quae molestiae ut?
+            </p>
+        </div>
+
+        <textarea name="creatComment" id="CrComment" rows="3" cols="60" placeholder="Comment here......"></textarea>
+        <br>
+        <button id="btnSubmit">Submit Comment</button>
+    </div>
+
+    <script>
+        const btn = document.getElementById('btnSubmit');
+        const comments = document.getElementById('allComment'); //comment container
+        const commentBox = document.getElementById('CrComment'); //text area
+
+        btn.addEventListener('click', function work(){
+            const commentValue = commentBox.value;
+            //.....................................
+            const newComment = document.createElement('p');
+            newComment.innerText = commentValue;
+            //.....................................
+            comments.appendChild(newComment);
+            //.....................................
+        })
+    </script>
+</body>
+</html>
